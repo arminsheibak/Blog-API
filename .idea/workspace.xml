@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22eb2d06-0b6b-491d-b8fd-5141d53c98d5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d7a79c5a-6572-4dc1-b6ed-a7bb4f1cf913.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d7a79c5a-6572-4dc1-b6ed-a7bb4f1cf913.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d7a79c5a-6572-4dc1-b6ed-a7bb4f1cf913/storage_v2/_src_/database/blog.oi8uAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d7a79c5a-6572-4dc1-b6ed-a7bb4f1cf913/storage_v2/_src_/database/blog.oi8uAA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogcore/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogcore/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogcore/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogcore/models.py" afterDir="false" />
-    </list>
+    <list default="true" id="22eb2d06-0b6b-491d-b8fd-5141d53c98d5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
