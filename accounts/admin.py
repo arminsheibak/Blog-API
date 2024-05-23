@@ -13,6 +13,24 @@ class UserAdmin(BaseUserAdmin):
     model = User
     list_display = [
         "username",
+        "first_name",
+        "last_name",
         "email",
         "is_superuser",
     ]
+    add_fieldsets = (
+        (
+            None,
+            {
+                "classes": ("wide",),
+                "fields": (
+                    "username",
+                    "first_name",
+                    "last_name",
+                    "email",
+                    "password1",
+                    "password2",
+                ),
+            },
+        ),
+    )
