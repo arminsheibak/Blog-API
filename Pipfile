@@ -9,6 +9,9 @@ djangorestframework = "*"
 psycopg2 = "*"
 pillow = "*"
 drf-nested-routers = "*"
+dj-rest-auth = "*"
+django-allauth = {extras = ["socialaccount"], version = "*"}
+djangorestframework-simplejwt = "*"
 
 [dev-packages]
 

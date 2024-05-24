@@ -23,6 +23,8 @@ from django.urls import path, include
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("blog/", include("blogcore.urls")),
+    path("accounts/", include("dj_rest_auth.urls")),
+    path("accounts/registration/", include("dj_rest_auth.registration.urls")),
 ]
 
 if settings.DEBUG:

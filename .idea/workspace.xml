@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22eb2d06-0b6b-491d-b8fd-5141d53c98d5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d7a79c5a-6572-4dc1-b6ed-a7bb4f1cf913.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d7a79c5a-6572-4dc1-b6ed-a7bb4f1cf913/storage_v2/_src_/database/blog.oi8uAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d7a79c5a-6572-4dc1-b6ed-a7bb4f1cf913/storage_v2/_src_/database/blog.oi8uAA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d7a79c5a-6572-4dc1-b6ed-a7bb4f1cf913/storage_v2/_src_/database/blog.oi8uAA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d7a79c5a-6572-4dc1-b6ed-a7bb4f1cf913/storage_v2/_src_/database/blog.oi8uAA/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d7a79c5a-6572-4dc1-b6ed-a7bb4f1cf913/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogcore/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogcore/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogcore/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogcore/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogcore/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogcore/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
