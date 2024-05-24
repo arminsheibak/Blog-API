@@ -72,6 +72,11 @@ class PostViewSet(ModelViewSet):
         serializer.save()
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
+    def get_permissions(self):
+        if self.request.method == "POST":
+            return [IsAuthenticated()]
+        return [IsAuthorOrReadOnly()]
+
 
 class PostImageViewSet(ModelViewSet):
     http_method_names = ["get", "delete", "post", "head", "options"]
@@ -83,6 +88,11 @@ class PostImageViewSet(ModelViewSet):
 
     def get_serializer_context(self):
         return {"post_id": self.kwargs["post_pk"]}
+
+    def get_permissions(self):
+        if self.request.method == "POST":
+            return [IsAuthenticated()]
+        return [IsOwnerOrReadOnly()]
 
 
 class CommentViewSet(ModelViewSet):
