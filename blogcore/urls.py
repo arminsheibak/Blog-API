@@ -9,6 +9,7 @@ router.register("posts", views.PostViewSet)
 
 posts_router = routers.NestedSimpleRouter(router, "posts", lookup="post")
 posts_router.register("images", views.PostImageViewSet, basename="post-images")
+posts_router.register("comments", views.CommentViewSet, basename="post-comments")
 
 urlpatterns = [
     path("", include(router.urls)),

@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from .permissions import IsAuthorOrReadOnly, IsOwnerOrReadOnly
 from .pagination import DefultPagination
-from .models import Author, Category, Post, PostImage
+from .models import Author, Category, Post, PostImage, Comment
 from .serializers import (
     AuthorSerializer,
     CategorySerializer,
@@ -13,6 +13,9 @@ from .serializers import (
     PostSerializer,
     CreatePostSerializer,
     UpdatePostSerializer,
+    CommentSerializer,
+    CreateCommentSerializer,
+    UpdateCommentSerializer,
 )
 
 
@@ -66,7 +69,6 @@ class PostViewSet(ModelViewSet):
             data=request.data, context={"author_id": request.user.id}
         )
         serializer.is_valid(raise_exception=True)
-        self.perform_create(serializer)
         serializer.save()
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
@@ -81,3 +83,34 @@ class PostImageViewSet(ModelViewSet):
 
     def get_serializer_context(self):
         return {"post_id": self.kwargs["post_pk"]}
+
+
+class CommentViewSet(ModelViewSet):
+    http_method_names = ["get", "delete", "post", "patch", "head", "options"]
+
+    def get_queryset(self):
+        return Comment.objects.filter(post_id=self.kwargs["post_pk"])
+
+    def get_serializer_class(self):
+        if self.request.method == "POST":
+            return CreateCommentSerializer
+        elif self.request.method == "PATCH":
+            return UpdateCommentSerializer
+        return CommentSerializer
+
+    def create(self, request, *args, **kwargs):
+        serializer = CreateCommentSerializer(
+            data=request.data,
+            context={
+                "author_id": self.request.user.id,
+                "post_id": self.kwargs["post_pk"],
+            },
+        )
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+    def get_permissions(self):
+        if self.request.method == "POST":
+            return [IsAuthenticated()]
+        return [IsOwnerOrReadOnly()]
