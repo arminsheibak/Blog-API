@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Author, Post, Category
+from .models import Author, Post, PostImage, Category
 
 admin.site.site_header = "Blog Admin"
 
@@ -20,3 +20,4 @@ class PostAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Category)
+admin.site.register(PostImage)
