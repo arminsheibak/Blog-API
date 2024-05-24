@@ -2,7 +2,7 @@ version: "3.9"
 services:
     web:
       build: .
-      command: gunicorn bookstore.wsgi -b 0.0.0.0:8000
+      command: gunicorn blog.wsgi -b 0.0.0.0:8000
       volumes:
         - .:/code
       ports:
