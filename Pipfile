@@ -12,6 +12,9 @@ drf-nested-routers = "*"
 dj-rest-auth = "*"
 django-allauth = {extras = ["socialaccount"], version = "*"}
 djangorestframework-simplejwt = "*"
+gunicorn = "*"
+whitenoise = "*"
+environs = {extras = ["django"], version = "*"}
 
 [dev-packages]
 
